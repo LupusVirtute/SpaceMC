@@ -67,6 +67,7 @@
     }
 </style>
 <script lang='ts'>
+
     class Admin {
         public link: string;
         constructor(public nick:string,public rank:string){

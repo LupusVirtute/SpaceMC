@@ -7,7 +7,7 @@
         color: #fff;
         font-size: .8vw;
         display:flex;
-        width:95vw;
+        width:93vw;
         justify-content: right;
         text-align:right;
     }

@@ -1,4 +1,7 @@
 <script lang='ts'>
+import Footer from "../Footer/Footer.svelte";
+
+
 class Rule {
     constructor(public section: String,public rules: String[]){}
 }
@@ -60,7 +63,7 @@ let rules:Rule[] = [
     #Rules {
         background: var(--background-main);
         height:100%;
-        overflow: auto;
+        overflow: hidden auto;
     }
     h1, h2, a {
         margin: 0;
@@ -127,4 +130,6 @@ let rules:Rule[] = [
         <hr/>
     {/each}
     <a class='turnBack' href='/'>Wróć na strone główną</a>
+    <Footer/>
 </section>
+

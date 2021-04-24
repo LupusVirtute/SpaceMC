@@ -35,11 +35,15 @@ onMount( () => {
 </script>
 <style lang="scss">
     @import "./Body.scss";
+    *{
+        transition: all .2s;
+    }
     #content {
         width:100%;
         height:100%;
         position:relative;
         overflow:hidden;
+        transition: none;
     }
 </style>
 <!-- 
