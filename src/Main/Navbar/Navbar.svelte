@@ -21,8 +21,11 @@
         color: var(--text-whiter);
         text-shadow: var(--glow);
         font-size: 1.2vw;
-        ;
         li {
+            ul {
+                transition: all .7s ease-in-out;
+
+            }
             display:flex;
             :hover {
                 color: var(--text-selected);

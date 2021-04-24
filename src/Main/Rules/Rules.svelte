@@ -60,23 +60,42 @@ let rules:Rule[] = [
     #Rules {
         background: var(--background-main);
         height:100%;
-        overflow:auto;
+        overflow: auto;
     }
-    h1,h2 {
+    h1, h2, a {
         margin: 0;
         font-family: 'Cinzel', serif;
         font-weight: normal;
         text-align:center;
+        text-shadow: var(--glow);
+
     }
     h1 {
         font-size:10vw;
         color: #0a0;
-        text-shadow: var(--glow);
     }
     h2 {
         font-size:5vw;
-        text-shadow: var(--glow);
-
+    }
+    .turnBack {
+        background: #0b0;
+        color: #fff;
+        width:30%;
+        padding: 1vw 3vw;
+        font-size:2vw;
+        border-radius: 3%;
+        text-decoration:none;
+        border: 1px solid var(--background-glow);
+        display:block;
+        margin: 3vh auto;
+        transition: all .7s ease-in-out;
+    }
+    .turnBack:hover {
+        color: var(--text-whiter);
+        background: var(--text-camouflaged);
+    }
+    hr {
+        width:99%;
     }
     p {
         text-align: center;
@@ -88,6 +107,10 @@ let rules:Rule[] = [
             color: #0b0;
             font-weight: 900;
         }
+    }
+    hr {
+        color: var(--text-whiter);
+        box-shadow: var(--glow);
     }
 </style>
 <section id='Rules'>
@@ -103,4 +126,5 @@ let rules:Rule[] = [
         </section>
         <hr/>
     {/each}
+    <a class='turnBack' href='/'>Wróć na strone główną</a>
 </section>
