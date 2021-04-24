@@ -42,13 +42,22 @@
         text-decoration: none;
     }
 </style>
+<script>
+import { onMount } from 'svelte';
+import { scrollto } from "svelte-scrollto";
+import * as animateScroll from "svelte-scrollto";
+animateScroll.setGlobalOptions({
+    container: 'main'
+});
+</script>
 <nav>
     <i class="fas fa-rocket icon-logo"></i>
     <li>
+        <ul><a href="#/"><i class="fas fa-clipboard"></i> Strona Główna</a></ul>
         <ul><a href="#/Rules"><i class="fas fa-clipboard"></i> Regulamin</a></ul>
-        <ul><i class="fas fa-users"></i> Zespół</ul>
-        <ul><i class="fas fa-file-alt"></i> Opis serwera</ul>
-        <ul><i class="fas fa-vote-yea"></i> Zagłosuj</ul>
+        <ul><a href='#/' use:scrollto={'#Squad'}><i class="fas fa-users"></i> Zespół</a></ul>
+        <ul><a use:scrollto={'#Description'} href='#/'><i class="fas fa-file-alt"></i> Opis serwera</a></ul>
+        <ul><a href='https://lista-serwerow.emecz.pl/serwery/minecraft/707cb592-5290-4f48-930e-9061efc945c1'><i class="fas fa-vote-yea"></i> Zagłosuj</a></ul>
         <ul><i class="fas fa-shopping-cart"></i> Sklep</ul>
     </li>
 </nav>

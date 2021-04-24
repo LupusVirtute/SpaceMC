@@ -1,5 +1,6 @@
 <script lang='ts'>
 import Footer from "../Footer/Footer.svelte";
+import Navbar from "../Navbar/Navbar.svelte";
 
 
 class Rule {
@@ -9,10 +10,12 @@ class Rule {
 let rules:Rule[] = [
     new Rule("Postanowienia ogólne",[
 			"Gracz logując się na serwer akceptuje regulamin i oświadcza, że dołoży wszelkich starań by go przestrzegać.",
-			"Podczas nałożenia blokady na konto gracza przedmioty z kontem związane mogą zostać usunięte.",
+			"Podczas nałożenia blokady na konto gracza przedmioty związane z kontem mogą zostać usunięte.",
 			"Nieznajomość regulaminu nie zwalnia gracza z odpowiedzialności za popełnione czyny",
 			"Administracja ma prawo ukarać gracza za czyn nieuwzględniony w regulaminie który negatywnie wpływa lub może wpłynąć na serwer",
-			"Oszustwa to znaczy oferowanie przedmiotu / usługi / pomocy a potem nie udzielanie tego przedmiotu / usługi / pomocy po uzgodnionej lub braku spełnienia danych warunków uzgodnionych przez obu graczy nie podlega karaniu osoby która zaproponowała dany  przedmiot / usługe / pomoc",
+			"Oszustwa to znaczy oferowanie przedmiotu / usługi / pomocy a potem nie udzielanie tego przedmiotu / usługi / pomocy po uzgodnionej lub braku spełnienia danych warunków uzgodnionych przez obu graczy nie podlega zwrocie itemów osobie która została oszukana przez osobe która zaproponowała dany  przedmiot / usługe / pomoc",
+			"Kopiowanie i używanie regulaminu serwera SpaceMC jest zabronione",
+			"Regulamin może być zmieniony bez poinformowania graczy",
 		]),
     new Rule ("Administracja ",[
 			"Administrator nie ma zobowiązania podania powodu dlaczego gracz jest sprawdzany.",
@@ -22,6 +25,8 @@ let rules:Rule[] = [
 			"Administracja nie sprzedaje i nie rozdaje przedmiotów. Uzyskanych na trybie kreatywnym",
 			"Administracja nie odpowiada za szkody poniesione na koncie w skutek kradzieży konta.",
 			"Administracja ma prawo wymagać od graczy zainstalowania programów: Discord (może być w wersji przeglądarkowej), TeamSpeak, TeamViewer, 7-zip, AnyDesk i Paladin w celu wykrycia niedozwolonych modyfikacji.",
+            "Administrator może ukarać graczy w swój własny sposób(Kara nie będąca Mute/Ban/BanIP) dając graczowi karanemu wybór normalna kara lub kara administratora która zostanie poprzednio zgłoszona do zarządu z wyjaśnieniem plusów tego ukarania",
+            "Administrator nie może nigdy używać kar z Art 2 §8 by mieć z tego korzyść na głównym świecie kara nie może być nigdy wykorzystywana do wzbogacania się administratora na głównym świecie"
         ]
     ),
     new Rule("Gracze",[
@@ -42,7 +47,7 @@ let rules:Rule[] = [
             "Zakaz wzbogacania sie kosztem serwera, zakaz sprzedawania kont, przedmiotów w grze za realną walutę.",
             "Oszukiwanie i/lub wprowadzanie administracji w błąd może skutkować banem permanentnym(Zależne od administratora).",
             "Gracz ma obowiązek mieć włączony czat, w przeciwnym wypadku może zostać zbanowany z powodu braku odzewu podczas sprawdzania w celu wykrycia niedozwolonych modyfikacji.",
-            "Gracz dodaje oraz dołącza do działki na własną odpowiedzialność.",
+            "Gracz dodaje oraz dołącza osoby do działki na własną odpowiedzialność.",
             "Zakaz bezsensownego griefowania terenu dookoła działki, jeśli celowo będziesz robił np. tzw. wulkany możesz zostać ukarany banem (zależne od szkód na terenie). ", 
     ]),
     new Rule('Czat', [
@@ -54,6 +59,14 @@ let rules:Rule[] = [
         "Zakaz przekręcania nicków administracji i szydzenia z niej.",
         "Udostępnianie adresów IP graczy grozi banem.",
         "Jakiekolwiek groźby skierowane w kierunku graczy/administracji mogą być karane banem. ",
+    ]),
+    new Rule("Taryfikator",[
+        "Obraza / Prowokacja / Spam na czacie - Mute od 10 minut do 7 dni",
+        "Manipulacja pakietami odbiegającymi od Minecrafta (Od firmy Mojang) lub czytanie tych pakietów programami / urządzeniami (Chodzi tutaj o cheaty) - Ban od 7dni do 30 dni",
+        "Brak kooperacji z administracją - Podwójna ilość czasu kary która mogła być wymierzona",
+        "Wykorzystywanie błędów serwera w celu zdobycia przewagi - od 14 dni do Całkowita blokada konta(Perm)",
+        "Inne rzeczy nie zawarte w taryfikatorze - Zależne od administratora",
+        "Nadużycie rangi - Degrad"
     ])
 ];
 
@@ -74,10 +87,17 @@ let rules:Rule[] = [
 
     }
     h1 {
+        .icon-logo{
+            font-size:8vw;
+        }
         font-size:10vw;
         color: #0a0;
+        margin-top:10vh;
     }
     h2 {
+        .icon-logo {
+            font-size:4vw;
+        }
         font-size:5vw;
     }
     .turnBack {
@@ -115,9 +135,36 @@ let rules:Rule[] = [
         color: var(--text-whiter);
         box-shadow: var(--glow);
     }
+    .icon-logo {
+        transform:rotate(-45deg);
+    }
+
+    img {
+        border-radius: 100%;
+        width:100%;
+        display:block;
+        margin-top:calc(98vh - 50px);
+        margin-left:2vw;
+        border:2px solid #0b0;
+        transition: all .6s;
+    }
+    .image {
+        position:absolute;
+        width:50px;
+    }
+    .image:hover {
+        img {
+            width: 200px;
+            margin-top:calc(98vh - 202px);
+        }
+    }
 </style>
+<Navbar/>
 <section id='Rules'>
-    <h1>Regulamin SpaceMC</h1>
+    <div class='image'>
+        <img src='https://media.discordapp.net/attachments/770654936269848615/828617588371095562/grafikson-space.png' alt='spacemc'/>
+    </div>
+    <h1>Regulamin<br/><i class="fas fa-rocket icon-logo"></i>SpaceMC&trade</h1>
     {#each rules as rule,i}
         <h2>Art {i+1}. {rule.section}</h2>
         <section class='Rules'>
@@ -129,6 +176,10 @@ let rules:Rule[] = [
         </section>
         <hr/>
     {/each}
+    <h2 style='color: #0a0;'><i class="fas fa-rocket icon-logo"></i>SpaceMC&trade</h2>
+    <p style='color:#0a0; text-align:center; margin:0;'>
+        Play with us!
+    </p>
     <a class='turnBack' href='/'>Wróć na strone główną</a>
     <Footer/>
 </section>
