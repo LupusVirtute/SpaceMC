@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root {
+	--background-main: #043927;
+	--background-glow: #022117;
+	--text-camouflaged: #098058;
+	--text-whiter: #06b67b;
+	--text-selected: #3e856d;
+	--text-underline: rgba(9, 128, 88,25);
+	--glow: 
+	1px 1px   3px var(--background-glow),
+	0px 1px   3px    var(--background-glow),
+	0px -1px  3px   var(--background-glow),
+	-1px 1px  3px   var(--background-glow),
+	-1px -1px 3px  var(--background-glow);
+}
+body {
+	color: #fff;
+	height:100%;
+	margin: 0;
+}
+h1 {
+	font-size: 4vw;
+	font-family: 'Cinzel', serif;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+html {
+	height:100%;
+}

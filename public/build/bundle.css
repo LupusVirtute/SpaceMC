@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css2?family=Cinzel&display=swap);
+:root {
+	--background-main: #043927;
+	--background-glow: #022117;
+	--text-camouflaged: #098058;
+}
+body {
+	height:100%;
+	margin: 0;
+}
+html {
+	height:100%;
+}
+#content.svelte-rmz2mz.svelte-rmz2mz{height:100%;display:flex;flex-flow:wrap;flex-direction:column;align-content:center;justify-content:center;overflow:hidden}#content.svelte-rmz2mz .logo.svelte-rmz2mz{font-size:10vw;color:var(--text-camouflaged);text-shadow:1px 1px 6px var(--background-glow), 0px 1px 6px var(--background-glow), 0px -1px 6px var(--background-glow), -1px 1px 6px var(--background-glow), -1px -1px 6px var(--background-glow);font-family:"Cinzel", serif}#content.svelte-rmz2mz .logo i.svelte-rmz2mz{margin-top:6vh;animation:svelte-rmz2mz-rocket;animation-fill-mode:both;animation-duration:7s}@keyframes svelte-rmz2mz-rocket{10%{text-shadow:-8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff;transform:translateX(100vw) translateY(10vh) rotate(-150deg)}20%{transform:translateX(40vw) translateY(10vh) rotate(-100deg)}50%{text-shadow:-8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff, -8vw 10vw 5vh #fff;transform:translateX(0vw) translateY(6vh) rotate(-30deg)}90%{text-shadow:-8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0), -8vw 10vw 5vh rgba(255, 255, 255, 0);transform:translateX(0vw) translateY(1vh) rotate(-50deg)}91%{text-shadow:none}100%{transform:rotate(-45deg);text-shadow:1px 1px 6px var(--background-glow), 0px 1px 6px var(--background-glow), 0px -1px 6px var(--background-glow), -1px 1px 6px var(--background-glow), -1px -1px 6px var(--background-glow)}}#background.svelte-rmz2mz.svelte-rmz2mz{background-size:cover;position:absolute;z-index:-1;filter:blur(0.1vw);width:100%;height:100%}
+main.svelte-gorvfm{height:100%}
