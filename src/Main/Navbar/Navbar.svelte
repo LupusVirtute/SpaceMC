@@ -34,13 +34,18 @@
     li {
         list-style-type: none;
     }
+    a {
+        color:inherit;
+        text-decoration: none;
+    }
 </style>
 <nav>
     <i class="fas fa-rocket icon-logo"></i>
     <li>
-        <ul><i class="fas fa-shopping-cart"></i> Sklep</ul>
+        <ul><a href="#/Rules"><i class="fas fa-clipboard"></i> Regulamin</a></ul>
         <ul><i class="fas fa-users"></i> Zespół</ul>
         <ul><i class="fas fa-file-alt"></i> Opis serwera</ul>
         <ul><i class="fas fa-vote-yea"></i> Zagłosuj</ul>
+        <ul><i class="fas fa-shopping-cart"></i> Sklep</ul>
     </li>
 </nav>
