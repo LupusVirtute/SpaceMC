@@ -1,107 +1,66 @@
 {
-    "background": {
-      "color": {
-        "value": "#0d47a1"
-      },
-      "position": "50% 50%",
-      "repeat": "no-repeat",
-      "size": "cover"
+  "fpsLimit": 30,
+  "particles": {
+    "number": {
+      "value": 0
     },
-    "fullScreen": {
+    "color": {
+      "value": [
+        "#0f0"
+      ]
+    },
+    "shadow": {
+      "blur": 50,
+      "color": {
+        "value": "#000000"
+      },
       "enable": true,
-      "zIndex": 1
-    },
-    "interactivity": {
-      "events": {
-        "onClick": {
-          "mode": "push"
-        },
-        "onHover": {
-          "mode": "repulse"
-        }
-      },
-      "modes": {
-        "bubble": {
-          "distance": 400,
-          "duration": 2,
-          "opacity": 0.8,
-          "size": 40
-        },
-        "grab": {
-          "distance": 400
-        }
+      "offset": {
+        "x": 1,
+        "y": 1
       }
     },
-    "particles": {
-      "color": {
-        "value": "#ffffff"
-      },
-      "links": {
-        "color": {
-          "value": "#ffffff"
-        },
-        "distance": 150,
-        "opacity": 0.4
-      },
-      "move": {
-        "attract": {
-          "rotate": {
-            "x": 600,
-            "y": 1200
-          }
-        },
+    "shape": {
+      "type": "square"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": 2,
+      "random": {
         "enable": true,
-        "outModes": {
-          "default": "destroy",
-          "bottom": "destroy",
-          "left": "destroy",
-          "right": "destroy",
-          "top": "destroy"
-        },
-        "speed": 5
-      },
-      "number": {
-        "density": {
-          "enable": true
-        },
-        "value": 0
-      },
-      "opacity": {
-        "animation": {
-          "speed": 3,
-          "minimumValue": 0.1
-        }
-      },
-      "size": {
-        "value": {
-          "min": 0.1,
-          "max": 20
-        },
-        "animation": {
-          "enable": true,
-          "sync": true,
-          "destroy": "max",
-          "minimumValue": 0.1,
-          "startValue": "min"
-        }
+        "minimumValue": 1
       }
     },
-    "emitters": {
-      "autoPlay": true,
+    "move": {
+      "enable": true,
+      "speed": 2,
       "direction": "top",
-      "life": {},
-      "rate": {
-        "quantity": 2,
-        "delay": 0.1
-      },
-      "size": {
-        "mode": "percent",
-        "height": 0,
-        "width": 100
-      },
-      "position": {
-        "x": 50,
-        "y": 100
-      }
+      "outMode": "destroy"
+    }
+  },
+  "interactivity": {
+    "detectsOn": "canvas",
+    "events": {
+      "resize": true
+    }
+  },
+  "detectRetina": true,
+
+  "emitters": {
+    "direction": "top",
+    "position": {
+      "x": 50,
+      "y": 100
+    },
+    "rate": {
+      "delay": 0.2,
+      "quantity": 1
+    },
+    "size": {
+      "width": 100,
+      "height": 0
     }
   }
+}
