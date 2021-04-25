@@ -87,6 +87,7 @@ let rules:Rule[] = [
     new Rule("Dodatki na serwer",[
         "Dodanie rzeczy na serwer może być tylko jeśli ilość głosów na tak będzie większa o 50% od totalnej ilości głosów na kanale propozycje serwera",
         "Werdykt każdej propozycji jest podejmowany po czasie 3dni roboczych od stworzenia propozycji",
+        "O Werdykcie zarząd nie musi informować graczy"
 
     ])
 ];
