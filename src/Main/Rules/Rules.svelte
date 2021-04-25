@@ -48,7 +48,8 @@ let rules:Rule[] = [
             "Oszukiwanie i/lub wprowadzanie administracji w błąd może skutkować banem permanentnym(Zależne od administratora).",
             "Gracz ma obowiązek mieć włączony czat, w przeciwnym wypadku może zostać zbanowany z powodu braku odzewu podczas sprawdzania w celu wykrycia niedozwolonych modyfikacji.",
             "Gracz dodaje oraz dołącza osoby do działki na własną odpowiedzialność.",
-            "Zakaz bezsensownego griefowania terenu dookoła działki, jeśli celowo będziesz robił np. tzw. wulkany możesz zostać ukarany banem (zależne od szkód na terenie). ", 
+            "Zakaz bezsensownego griefowania terenu dookoła działki, jeśli celowo będziesz robił np. tzw. wulkany możesz zostać ukarany banem (zależne od szkód na terenie). ",
+            "Zakaz kompletnego używania programu zmieniającego ip"
     ]),
     new Rule('Czat', [
         "Obraza graczy / administracji / serwera / rodziny graczy lub administracji grozi mutem lub banem.",
@@ -67,6 +68,26 @@ let rules:Rule[] = [
         "Wykorzystywanie błędów serwera w celu zdobycia przewagi - od 14 dni do Całkowita blokada konta(Perm)",
         "Inne rzeczy nie zawarte w taryfikatorze - Zależne od administratora",
         "Nadużycie rangi - Degrad"
+    ]),
+    new Rule("Zgłaszanie bugów",[
+        "Bug jest to błąd serwerowy który został wprowadzony przez błąd ludzki oznacza to działanie mechanik serwera inne od przewidywanego",
+        "Nagroda za zgłoszone bugi liczą się tylko jeśli są zgłoszone przez system zgłaszania issues na stronie github serwera https://github.com/SpaceMC-EU/SpaceMC-Bugi/issues",
+        "Nagrody mogą być tylko przyznane jeśli zespół developerski uzna to za bug i zatwierdzi issue na githubie",
+        "Nie nagradza się zgłaszania bugów na serwerze tylko przez system github",
+        "Bugi dokładnie nie udokumentowane według wzoru zostaną pominięte i nie nagrodzone",
+        "Każde 2 dni rangi niższej można wymienić na range premium wyższą do swagger\'a",
+        "Brak informacji na temat nicku gracza skutkuje pominięciem przyznania nagrody po czasie naprawienia i zatwierdzenia",
+        "Informacje na temat nicku gracza muszą być wydzielone od szablonu zgłaszania bugów najbardziej preferencyjnie na górze lub na dole szablonu oddzielone 2 enterami",
+        "Rodzaj rangi i ilość dni może być zdefiniowana w poniższych punktach",
+        "Bugi wizualne (Bugi które są tylko wyglądowe nie mechanikowe) - od 1h do 4 dni rangi Gold",
+        "Bugi mechaniczne (Sprawiają że jedna opcja gry jest nie dostępna lub zepsuta bo nie da się użyć tej mechaniki według sposobu użycia) - od 1 dnia do 14 dni Rangi Gold",
+        "Bugi dupe (Chodzi głównie o kopiowanie itemów i wykorzystywanie ich w grze później do zyskania przewagi) - od 30 dni rangi Gold\'a"
+
+    ]),
+    new Rule("Dodatki na serwer",[
+        "Dodanie rzeczy na serwer może być tylko jeśli ilość głosów na tak będzie większa o 50% od totalnej ilości głosów na kanale propozycje serwera",
+        "Werdykt każdej propozycji jest podejmowany po czasie 3dni roboczych od stworzenia propozycji",
+
     ])
 ];
 
