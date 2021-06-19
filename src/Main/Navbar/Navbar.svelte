@@ -2,12 +2,12 @@
     nav {
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items:center;
-        padding:.5vw 2vw;
+        padding:.5vw 1vw;
         position: absolute;
         z-index: 1;
-        width:calc(100vw - 4vw);
+        width:calc(100vw - 2vw);
         color: #fff;
         .icon-logo {
             transform: rotate(-45deg);
@@ -18,20 +18,21 @@
         box-shadow: 0px 1px 10px #0B0;
         color: var(--text-whiter);
         text-shadow: var(--glow);
-        font-size: 1.2vw;
+        font-size: 1vw;
         li {
             ul {
                 word-break:keep-all;
                 transition: all .7s ease-in-out;
             }
             display:flex;
+            flex-wrap:wrap;
             :hover {
                 color: var(--text-selected);
                 cursor: pointer;
                 
             }
             ul:last-child{
-                margin-right:2vw;
+                margin-right:0.4vw;
             }
         }
     }
@@ -78,6 +79,11 @@ animateScroll.setGlobalOptions({
         <ul>
             <a href='https://lista-serwerow.emecz.pl/serwery/minecraft/707cb592-5290-4f48-930e-9061efc945c1'>
                 <i class="fas fa-vote-yea"></i> Zagłosuj
+            </a>
+        </ul>
+        <ul>
+            <a href='https://discord.com/invite/gymSDNqUWf'>
+                <i class="fab fa-discord"></i> Discord
             </a>
         </ul>
         <ul>

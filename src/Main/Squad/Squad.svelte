@@ -20,6 +20,7 @@
         align-content: space-around;
     }
     .CharacterCard {
+        transition:all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
         width:20%;
         border-radius:.3vw;
         margin-top:10px;
@@ -56,6 +57,9 @@
     .Head-Admin {
         color: #f44;
     }
+    .Administrator {
+        color: #f66;
+    }  
     .Moderator {
         color: #0a0;
     }
@@ -64,6 +68,9 @@
     }
     .Trial-Support {
         color: #F70;
+    }
+    .Support {
+        color: #0f0;
     }
 </style>
 <script lang='ts'>
@@ -80,11 +87,13 @@
         'Miły pomyślny chłopak pomagający w tworzeniu serwera zna się na promowaniu i zarządzaniu administracją',
         'Programista kontrolujący świat swojego komputera potrafiący zaginać czasoprzestrzeń by być bardziej leniwym',
         'Budownicza redaktorka i artysta z zamiłowaniem do budowania',
-        'Programista nowy w zespole ale z chęciami',
         'сука блять',
         'Carola aka Karol jest naszym głównym działem pilnującym czat',
-        'Ma tą jedną brew która wytwarza strach u cheaterów ale ogólnie spoko jest',
-        'Anonimowy chłopak'
+        'Programista nowy w zespole ale z chęciami',
+        'Dziewczyna która w naszym składzie rozwala ludzi na czacie',
+        'Nowy członek zespołu',
+        'Nowy członek zespołu',
+        'Totalnie z innego świata',
 
     ];
     
@@ -92,11 +101,13 @@
         new Admin('ZmxDMG','Wlasciciel'),
         new Admin('LupusVirtute','Wlasciciel'),
         new Admin('Nnates','Head-Admin'),
+        new Admin('Ruske','Administrator'),
+        new Admin('Carola','Administrator'),
         new Admin('Rekuseq','JuniorDev'),
-        new Admin('Ruske','Moderator'),
-        new Admin('Carola','Moderator'),
-        new Admin('Zapiekanka_Heinz','Moderator'),
-        new Admin('KenzX_PL','Trial-Support'),
+        new Admin('wikmil','Support'),
+        new Admin('Yemisu','Trial-Support'),
+        new Admin('Quer','Trial-Support'),
+        new Admin('Alienowsky','Trial-Support'),
     ];
     nicknames.forEach( (o)=> {
         let url = link;

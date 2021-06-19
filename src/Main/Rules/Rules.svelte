@@ -13,9 +13,10 @@ let rules:Rule[] = [
 			"Podczas nałożenia blokady na konto gracza przedmioty związane z kontem mogą zostać usunięte.",
 			"Nieznajomość regulaminu nie zwalnia gracza z odpowiedzialności za popełnione czyny",
 			"Administracja ma prawo ukarać gracza za czyn nieuwzględniony w regulaminie który negatywnie wpływa lub może wpłynąć na serwer",
-			"Oszustwa to znaczy oferowanie przedmiotu / usługi / pomocy a potem nie udzielanie tego przedmiotu / usługi / pomocy po uzgodnionej lub braku spełnienia danych warunków uzgodnionych przez obu graczy nie podlega zwrocie itemów osobie która została oszukana przez osobe która zaproponowała dany  przedmiot / usługe / pomoc",
-			"Kopiowanie i używanie regulaminu serwera SpaceMC jest zabronione",
+			"Oszustwa to znaczy oferowanie przedmiotu / usługi / pomocy a potem nie udzielanie tego przedmiotu / usługi / pomocy po uzgodnionej lub braku spełnienia danych warunków uzgodnionych przez obu graczy nie podlega zwrocie przedmiotów osobie która została oszukana przez osobe która zaproponowała dany  przedmiot / usługe / pomoc",
+			"Kopiowanie i używanie regulaminu serwera SpaceMC jest zabronione przez jednostki trzecie",
 			"Regulamin może być zmieniony bez poinformowania graczy",
+            "Administrator może ukarać gracza za wstawianie / tworzenie "
 		]),
     new Rule ("Administracja ",[
 			"Administrator nie ma zobowiązania podania powodu dlaczego gracz jest sprawdzany.",
@@ -31,25 +32,30 @@ let rules:Rule[] = [
     ),
     new Rule("Gracze",[
             "Zakazane jest używanie Zhackowanych klientów gry (np. Huzuni, Nodus, Resilience, itp.) - ban 30 dni.",
-            "Dozwolone modyfikacje: ReisMinimap oraz Optifine + Shadery. (To znaczy modyfikacje które nie dają informacji dających przewagę nad graczami typu XRay / Wallhack itp. itd.).",
+            "Dozwolone modyfikacje: ReisMinimap oraz Optifine + Shadery. (To znaczy modyfikacje które nie dających przewagę nad graczami typu XRay / Wallhack / Macro / FullBright itp. itd.).",
             "Używanie wersji Minecrafta które ułatwiają rozgrywke poprzez modyfikowanie plików gry / pamięci gry / manipulują pakietami wysyłanymi do serwera np. : Wurst Huzuni Nodus Jigsaw jest nie dozwolone",
             "Używanie resource packów które są uznawane jako xray to znaczy gracz może wizualnie w grze widzieć przez bloki innych graczy surowce itp jest zabronione",
-            "Używanie błędów serwera bez poinformowania administratora jest karane zależnie od administratora takie błędy należy niezwłocznie zgłaszać na githubie https://github.com/SpaceMC-EU/SpaceMC-Bugi/issues",
+            "Używanie błędów serwera jest karane bez poinformowania administratora w celu demonstracji jest karane zależnie od administratora takie błędy należy niezwłocznie zgłaszać na githubie https://github.com/SpaceMC-EU/SpaceMC-Bugi/issues",
             "Brak kooperacji z administracją serwera jest karane",
             "Jest zakaz tworzenia multikont bez powodu typu (zmiana nicku,skradzione konto premium itp itd) jest karane to banem permanetnym na adres ip na całą edycje serwera",
-            "Zakaz udostępniania konta innym osobom takie konta są banowane.",
+            "Zakaz udostępniania konta innym osobom takie konta są blokowane permanentnie.",
             "Używanie obraźliwych i wulgarnych pseudonimów na serwerze grozi banem permanetnym na ten konkretny pseudonim. (chyba że adres ip użył tego psuedonimu przez co grozi mu ban na ip)",
             "Współpraca z cheaterem grozi blokadą konta, wyczyszczeniem ekwipunku i usunięciem działki, każdy cheater powinien być niezwłocznie zgłoszony administracji serwera.",
             "Gdy jest się podejrzanym o złamanie regulaminu przenoszenie ekwipunku do innych graczy / miejsc skutkuje czyszczeniem ekwipunku i działki tego gracza",
             "Wylogowanie się podczas sprawdzania skutkuje banem zależnym od podejrzeń administratora.",
-            "Przyznanie się do niedozwolonych modyfikacji podczas sprawdzania skraca bana do tygodnia.",
+            "Przyznanie się do niedozwolonych modyfikacji pozwala na otrzymanie bana tymczasowego",
             "Zakaz szerzenia błędnych / nieprawdziwych informacji na temat serwera.",
             "Zakaz wzbogacania sie kosztem serwera, zakaz sprzedawania kont, przedmiotów w grze za realną walutę.",
             "Oszukiwanie i/lub wprowadzanie administracji w błąd może skutkować banem permanentnym(Zależne od administratora).",
             "Gracz ma obowiązek mieć włączony czat, w przeciwnym wypadku może zostać zbanowany z powodu braku odzewu podczas sprawdzania w celu wykrycia niedozwolonych modyfikacji.",
             "Gracz dodaje oraz dołącza osoby do działki na własną odpowiedzialność.",
-            "Zakaz bezsensownego griefowania terenu dookoła działki, jeśli celowo będziesz robił np. tzw. wulkany możesz zostać ukarany banem (zależne od szkód na terenie). ",
-            "Zakaz kompletnego używania programu zmieniającego ip"
+            "Zakaz bezsensownego griefowania terenu dookoła działki, jeśli celowo będziesz robił np. tzw. wulkany możesz zostać ukarany banem (zależne od szkód na terenie). (Tutaj też warto zauważyć jeśli gracz nie ma działki grief jest dozwolony)",
+            "Zakaz kompletnego używania programu zmieniającego ip lub przekierowania swojego łączenia z serwerem przez inne proxy",
+            "Oszukiwanie graczy może być karane usuwaniem całego dobytku konta lub karą dostępną dla administracji (bez zwrotu przedmiotów) jeśli gracz lub administrator uzbierał wystarczające dowody na temat oszustwa.",
+            "Zakazane jest tworzenie sytuacji gdzie Gracz jest uwięziony nie może wyjść i jest w pułapce równocześnie nie mogąc bić się z napastnikiem / napastnikami.",
+            "Zakazane jest używania komendy /sethome na czyjejś działce(do której nie jest się dodanym) w takim wypadku gdy gracz ma podejrzenia na temat tego może uwięzić gracza i zabijać go w okolicach jego lokacji zapisanej przy użyciu /home",
+            "Pokazywanie bugów innym graczom jest nie dozwolone.",
+
     ]),
     new Rule('Czat', [
         "Obraza graczy / administracji / serwera / rodziny graczy lub administracji grozi mutem lub banem.",
@@ -60,6 +66,7 @@ let rules:Rule[] = [
         "Zakaz przekręcania nicków administracji i szydzenia z niej.",
         "Udostępnianie adresów IP graczy grozi banem.",
         "Jakiekolwiek groźby skierowane w kierunku graczy/administracji mogą być karane banem. ",
+        "Kłócenie się z administratorem na temat słuszności kary jest zakazane na czatach ogólnych względem tego można się zgłosić na serwer discorda według wzoru na odpowiednim kanale w celu rozpatrzenia ukarania w przeciwnym razie gdy gracz się kłóci karą jest 5 dni mute."
     ]),
     new Rule("Taryfikator",[
         "Obraza / Prowokacja / Spam na czacie - Mute od 10 minut do 7 dni",
@@ -67,7 +74,15 @@ let rules:Rule[] = [
         "Brak kooperacji z administracją - Podwójna ilość czasu kary która mogła być wymierzona",
         "Wykorzystywanie błędów serwera w celu zdobycia przewagi - od 14 dni do Całkowita blokada konta(Perm)",
         "Inne rzeczy nie zawarte w taryfikatorze - Zależne od administratora",
-        "Nadużycie rangi - Degrad"
+        "Nadużycie rangi - Degrad",
+        "Kary na IP mogą być zmienione na podstawie tego czy na jednym IP po potwierdzeniu przez administratora gra pare innych osób na tym samym IP",
+        "Omijanie kary - Ban perm ip",
+        "Art 1 §1 - BanIP Perm za brak akceptacji regulaminu",
+        "Art 3 §1-4 - Przyznanie się do przewinienia jest równe 7 dni temp ban za pierwsze przewinienie następne się podwajają",
+        "Art 3 §6 - BanIP perm",
+        "Art 3 §24 - Zależne od administratora",
+
+
     ]),
     new Rule("Zgłaszanie bugów",[
         "Bug jest to błąd serwerowy który został wprowadzony przez błąd ludzki oznacza to działanie mechanik serwera inne od przewidywanego",
@@ -81,13 +96,19 @@ let rules:Rule[] = [
         "Rodzaj rangi i ilość dni może być zdefiniowana w poniższych punktach",
         "Bugi wizualne (Bugi które są tylko wyglądowe nie mechanikowe) - od 1h do 4 dni rangi Gold",
         "Bugi mechaniczne (Sprawiają że jedna opcja gry jest nie dostępna lub zepsuta bo nie da się użyć tej mechaniki według sposobu użycia) - od 1 dnia do 14 dni Rangi Gold",
-        "Bugi dupe (Chodzi głównie o kopiowanie itemów i wykorzystywanie ich w grze później do zyskania przewagi) - od 30 dni rangi Gold\'a"
+        "Bugi dupe (Chodzi głównie o kopiowanie itemów i wykorzystywanie ich w grze później do zyskania przewagi) - od 30 dni rangi Gold\'a",
+        "Crashery (Chodzi o bugi które sprawiają że dostęp do usług serwerowych jest ograniczony poprzez wyłączenie serwera lub go zatrzymanie) - 8 dni Rangi VIP - 14 dni Rangi Sponsor"
 
     ]),
     new Rule("Dodatki na serwer",[
         "Dodanie rzeczy na serwer może być tylko jeśli ilość głosów na tak będzie większa o 50% od totalnej ilości głosów na kanale propozycje serwera",
         "Werdykt każdej propozycji jest podejmowany po czasie 3dni roboczych od stworzenia propozycji",
         "O Werdykcie zarząd nie musi informować graczy"
+    ]),
+    new Rule("Apelacje",[
+        "Do apelacji o usunięcie kary może przystąpić gracz na kanale discord przeznaczonym do tego",
+        "Na tym kanale discord względem Art 8 §1 może się odzywać tylko banujący lub administrator który banował",
+        "Apelujący nie może się wypowiadać jeśli sprawa została  już rozpatrzona negatywnie lub pozytywnie przez następne 8 dni"
 
     ])
 ];
